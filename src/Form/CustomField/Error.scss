@@ -1,0 +1,32 @@
+.display-error-component {
+  min-height: 30px;
+
+  p {
+    font-size: 12px;
+    max-width: 300px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+  }
+
+  .touched-enter {
+    opacity: 0;
+  }
+
+  .touched-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  .touched-exit {
+    opacity: 1;
+  }
+
+  .touched-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+}
