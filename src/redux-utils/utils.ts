@@ -43,8 +43,9 @@ export const createRequestTypes = (base: string) => {
 
 // create action creator
 
+const typeT: { [key: string]: string } = {};
+
 export const createActionAc = (type: typeof typeT): actionAcT => {
-  const typeT: { [key: string]: string } = {};
   return {
     request: () => action(type[STATUS.REQUEST]),
     success: (response: AxiosResponse) =>
